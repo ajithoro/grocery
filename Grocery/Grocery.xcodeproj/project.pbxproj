@@ -13,6 +13,9 @@
 		4F6754641E00DA5D00154835 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F6754621E00DA5D00154835 /* LaunchScreen.storyboard */; };
 		4F67546D1E00DAC600154835 /* GroceryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67546C1E00DAC600154835 /* GroceryViewController.swift */; };
 		4F67546F1E00DAE900154835 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67546E1E00DAE900154835 /* BaseViewController.swift */; };
+		4F6754731E00DD7800154835 /* GridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6754711E00DD7800154835 /* GridTableViewCell.swift */; };
+		4F6754741E00DD7800154835 /* GridTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F6754721E00DD7800154835 /* GridTableViewCell.xib */; };
+		4F6754771E00DDD000154835 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6754761E00DDD000154835 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		4F6754651E00DA5D00154835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F67546C1E00DAC600154835 /* GroceryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroceryViewController.swift; path = viewcontrollers/GroceryViewController.swift; sourceTree = "<group>"; };
 		4F67546E1E00DAE900154835 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = viewcontrollers/BaseViewController.swift; sourceTree = "<group>"; };
+		4F6754711E00DD7800154835 /* GridTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridTableViewCell.swift; path = customcells/GridTableViewCell.swift; sourceTree = "<group>"; };
+		4F6754721E00DD7800154835 /* GridTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GridTableViewCell.xib; path = customcells/GridTableViewCell.xib; sourceTree = "<group>"; };
+		4F6754761E00DDD000154835 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = helpers/Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		4F6754581E00DA5D00154835 /* Grocery */ = {
 			isa = PBXGroup;
 			children = (
+				4F6754751E00DDA400154835 /* helpers */,
+				4F6754701E00DD1900154835 /* customcells */,
 				4F67546B1E00DAB800154835 /* viewcontrollers */,
 				4F6754591E00DA5D00154835 /* AppDelegate.swift */,
 				4F67545D1E00DA5D00154835 /* Main.storyboard */,
@@ -73,6 +81,23 @@
 				4F67546E1E00DAE900154835 /* BaseViewController.swift */,
 			);
 			name = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		4F6754701E00DD1900154835 /* customcells */ = {
+			isa = PBXGroup;
+			children = (
+				4F6754711E00DD7800154835 /* GridTableViewCell.swift */,
+				4F6754721E00DD7800154835 /* GridTableViewCell.xib */,
+			);
+			name = customcells;
+			sourceTree = "<group>";
+		};
+		4F6754751E00DDA400154835 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4F6754761E00DDD000154835 /* Constants.swift */,
+			);
+			name = helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +162,7 @@
 				4F6754641E00DA5D00154835 /* LaunchScreen.storyboard in Resources */,
 				4F6754611E00DA5D00154835 /* Assets.xcassets in Resources */,
 				4F67545F1E00DA5D00154835 /* Main.storyboard in Resources */,
+				4F6754741E00DD7800154835 /* GridTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,9 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F6754771E00DDD000154835 /* Constants.swift in Sources */,
 				4F67546D1E00DAC600154835 /* GroceryViewController.swift in Sources */,
 				4F67545A1E00DA5D00154835 /* AppDelegate.swift in Sources */,
 				4F67546F1E00DAE900154835 /* BaseViewController.swift in Sources */,
+				4F6754731E00DD7800154835 /* GridTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
