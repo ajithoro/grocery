@@ -18,8 +18,6 @@ class GroceryViewController: BaseViewController {
         self.automaticallyAdjustsScrollViewInsets = false
         self.tableViewGrocery.delegate = self
         self.tableViewGrocery.dataSource = self
-        let gridCellNib: UINib = UINib(nibName: "GridTableViewCell", bundle: nil)
-        self.tableViewGrocery.register(gridCellNib, forCellReuseIdentifier: kCellGrid)
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,10 +43,44 @@ extension GroceryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: kCellGrid, for: indexPath) as? GridTableViewCell
+            cell?.backgroundColor = UIColor.green
             return cell!
         }
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard let gridCell = cell as? GridTableViewCell else {
+            return
+        }
+        gridCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRowSection: indexPath.section)
+    }
+    
+}
+
+extension GroceryViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        if collectionView.tag == 0 {
+            return 1
+        }
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView.tag == 0 {
+            return 4
+        }
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView.tag == 0 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kCellCollectionGrid, for: indexPath) as? GridCollectionViewCell
+            cell?.backgroundColor = UIColor.purple
+            return cell!
+        }
+        return UICollectionViewCell()
+    }
 }
 

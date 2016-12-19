@@ -14,8 +14,9 @@
 		4F67546D1E00DAC600154835 /* GroceryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67546C1E00DAC600154835 /* GroceryViewController.swift */; };
 		4F67546F1E00DAE900154835 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F67546E1E00DAE900154835 /* BaseViewController.swift */; };
 		4F6754731E00DD7800154835 /* GridTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6754711E00DD7800154835 /* GridTableViewCell.swift */; };
-		4F6754741E00DD7800154835 /* GridTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F6754721E00DD7800154835 /* GridTableViewCell.xib */; };
 		4F6754771E00DDD000154835 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6754761E00DDD000154835 /* Constants.swift */; };
+		4FE1A2A01E07EC8A00013F3C /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1A29E1E07EC8A00013F3C /* GridCollectionViewCell.swift */; };
+		4FE1A2A11E07EC8A00013F3C /* GridCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE1A29F1E07EC8A00013F3C /* GridCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +29,9 @@
 		4F67546C1E00DAC600154835 /* GroceryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroceryViewController.swift; path = viewcontrollers/GroceryViewController.swift; sourceTree = "<group>"; };
 		4F67546E1E00DAE900154835 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = viewcontrollers/BaseViewController.swift; sourceTree = "<group>"; };
 		4F6754711E00DD7800154835 /* GridTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridTableViewCell.swift; path = customcells/GridTableViewCell.swift; sourceTree = "<group>"; };
-		4F6754721E00DD7800154835 /* GridTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GridTableViewCell.xib; path = customcells/GridTableViewCell.xib; sourceTree = "<group>"; };
 		4F6754761E00DDD000154835 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = helpers/Constants.swift; sourceTree = "<group>"; };
+		4FE1A29E1E07EC8A00013F3C /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridCollectionViewCell.swift; path = customcells/GridCollectionViewCell.swift; sourceTree = "<group>"; };
+		4FE1A29F1E07EC8A00013F3C /* GridCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GridCollectionViewCell.xib; path = customcells/GridCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				4F6754711E00DD7800154835 /* GridTableViewCell.swift */,
-				4F6754721E00DD7800154835 /* GridTableViewCell.xib */,
+				4FE1A29E1E07EC8A00013F3C /* GridCollectionViewCell.swift */,
+				4FE1A29F1E07EC8A00013F3C /* GridCollectionViewCell.xib */,
 			);
 			name = customcells;
 			sourceTree = "<group>";
@@ -159,10 +162,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE1A2A11E07EC8A00013F3C /* GridCollectionViewCell.xib in Resources */,
 				4F6754641E00DA5D00154835 /* LaunchScreen.storyboard in Resources */,
 				4F6754611E00DA5D00154835 /* Assets.xcassets in Resources */,
 				4F67545F1E00DA5D00154835 /* Main.storyboard in Resources */,
-				4F6754741E00DD7800154835 /* GridTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FE1A2A01E07EC8A00013F3C /* GridCollectionViewCell.swift in Sources */,
 				4F6754771E00DDD000154835 /* Constants.swift in Sources */,
 				4F67546D1E00DAC600154835 /* GroceryViewController.swift in Sources */,
 				4F67545A1E00DA5D00154835 /* AppDelegate.swift in Sources */,
@@ -339,6 +343,7 @@
 				4F67546A1E00DA5D00154835 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

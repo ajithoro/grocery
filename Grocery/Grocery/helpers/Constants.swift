@@ -9,3 +9,4 @@
 import Foundation
 
 let kCellGrid: String = "CellGrid"
+let kCellCollectionGrid: String = "CellCollectionGrid"
