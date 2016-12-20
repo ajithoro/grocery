@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F1461791E08369E006FD9A6 /* GridItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1461781E08369E006FD9A6 /* GridItem.swift */; };
+		4F14617C1E083A18006FD9A6 /* strawberry-filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F14617B1E083A18006FD9A6 /* strawberry-filled-50.png */; };
 		4F67545A1E00DA5D00154835 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6754591E00DA5D00154835 /* AppDelegate.swift */; };
 		4F67545F1E00DA5D00154835 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F67545D1E00DA5D00154835 /* Main.storyboard */; };
 		4F6754611E00DA5D00154835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F6754601E00DA5D00154835 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F1461781E08369E006FD9A6 /* GridItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridItem.swift; path = models/GridItem.swift; sourceTree = "<group>"; };
+		4F14617B1E083A18006FD9A6 /* strawberry-filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "strawberry-filled-50.png"; path = "assets/strawberry-filled-50.png"; sourceTree = "<group>"; };
 		4F6754561E00DA5D00154835 /* Grocery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grocery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F6754591E00DA5D00154835 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F67545E1E00DA5D00154835 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +49,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F1461771E08364D006FD9A6 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				4F1461781E08369E006FD9A6 /* GridItem.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		4F14617A1E083725006FD9A6 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				4F14617B1E083A18006FD9A6 /* strawberry-filled-50.png */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
 		4F67544D1E00DA5D00154835 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +84,8 @@
 		4F6754581E00DA5D00154835 /* Grocery */ = {
 			isa = PBXGroup;
 			children = (
+				4F14617A1E083725006FD9A6 /* assets */,
+				4F1461771E08364D006FD9A6 /* models */,
 				4F6754751E00DDA400154835 /* helpers */,
 				4F6754701E00DD1900154835 /* customcells */,
 				4F67546B1E00DAB800154835 /* viewcontrollers */,
@@ -163,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FE1A2A11E07EC8A00013F3C /* GridCollectionViewCell.xib in Resources */,
+				4F14617C1E083A18006FD9A6 /* strawberry-filled-50.png in Resources */,
 				4F6754641E00DA5D00154835 /* LaunchScreen.storyboard in Resources */,
 				4F6754611E00DA5D00154835 /* Assets.xcassets in Resources */,
 				4F67545F1E00DA5D00154835 /* Main.storyboard in Resources */,
@@ -179,6 +202,7 @@
 				4FE1A2A01E07EC8A00013F3C /* GridCollectionViewCell.swift in Sources */,
 				4F6754771E00DDD000154835 /* Constants.swift in Sources */,
 				4F67546D1E00DAC600154835 /* GroceryViewController.swift in Sources */,
+				4F1461791E08369E006FD9A6 /* GridItem.swift in Sources */,
 				4F67545A1E00DA5D00154835 /* AppDelegate.swift in Sources */,
 				4F67546F1E00DAE900154835 /* BaseViewController.swift in Sources */,
 				4F6754731E00DD7800154835 /* GridTableViewCell.swift in Sources */,

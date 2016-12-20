@@ -11,6 +11,7 @@ import UIKit
 class GridTableViewCell: UITableViewCell {
     
     @IBOutlet weak var gridCollectionView: UICollectionView!
+    var flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,6 +31,11 @@ class GridTableViewCell: UITableViewCell {
 extension GridTableViewCell {
     
     func setCollectionViewDataSourceDelegate<D: UICollectionViewDataSource & UICollectionViewDelegate> (dataSourceDelegate: D, forRowSection rowSection: Int) {
+        
+        self.flowLayout.minimumInteritemSpacing = 1.0
+        self.flowLayout.minimumLineSpacing = 1.0
+        self.gridCollectionView.collectionViewLayout = self.flowLayout
+        
         self.gridCollectionView.dataSource = dataSourceDelegate
         self.gridCollectionView.delegate = dataSourceDelegate
         self.gridCollectionView.tag = rowSection
